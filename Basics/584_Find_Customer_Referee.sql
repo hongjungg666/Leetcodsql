@@ -8,7 +8,9 @@ WHERE ISNULL(referee_id,0) != 2;
 -- Solution 2: Basics
 SELECT name 
 FROM customer
-WHERE COALESCE(referee_id,0) != 2;
+WHERE COALESCE(referee_id,0) != 2; 
+
+养成看见null使用coalesce的习惯
 
 
 
